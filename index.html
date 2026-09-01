@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>[Your Name] — Portfolio</title>
+<title>Alvin Tsui — Portfolio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -12,18 +12,22 @@
 <body>
 
 <header class="site-chrome">
-  <a class="mark" href="index.html">[Your Name]</a>
+  <a class="mark" href="index.html">Alvin Tsui</a>
   <a class="contact-link" href="contact.html">Get in touch</a>
 </header>
 
 <div class="pan-container" id="panContainer">
-
   <!-- ============ HERO ============ -->
   <section class="panel hero" id="hero">
     <div class="hero-inner">
       <p class="hero-kicker">A working record of what I've built</p>
-      <h1 class="hero-title">[Your Name]</h1>
-      <p class="hero-sub">Software engineer, sometimes bioinformatics researcher,<br>occasionally platoon commander. Scroll sideways to start.</p>
+      <h1 class="hero-title">Alvin Tsui</h1>
+      <p class="hero-sub">Software engineer, sometimes bioinformatics researcher, or student. Scroll <b>sideways</b> to start.</p>
+
+      <div class="hero-media" aria-label="Team photo from Storm the Wall">
+        <img class="hero-photo" src="assets/storm-photo.jpg" alt="Alvin and teammates posing together at Storm the Wall">
+      </div>
+
       <div class="scroll-hint" aria-hidden="true">
         <span></span>
         <p>pan →</p>
@@ -34,16 +38,13 @@
   <!-- ============ 01 — DEVIANTART ============ -->
   <section class="panel" id="deviantart">
     <div class="panel-inner layout-a">
-      <div class="panel-media">
-        <div class="media-slot" data-hint="Drop the DeviantArt logo here">
-          <span>DeviantArt logo</span>
-        </div>
+      <div class="panel-media" >
+        <img src="assets/da-logo.png" alt="DeviantArt logo" class="media-slot" style="background-color: white">
       </div>
       <div class="panel-text">
-        <p class="chapter">Chapter 01 — 2025</p>
         <h2>DeviantArt <em>(Wix.com)</em></h2>
         <p class="role">Data / ML Infrastructure Intern</p>
-        <p class="story">Four months rebuilding production data infrastructure for a live analytics platform. I designed a zero-downtime migration off three legacy databases, built a distributed-locking system for concurrent data ingestion, and worked on ML inference pipelines for image embeddings — without ever breaking a system other teams depended on daily.</p>
+        <p class="story">Four months rebuilding production data infrastructure for a live analytics platform. I designed a zero-downtime migration off three legacy databases, built a distributed-locking system for concurrent data ingestion, and worked on ML inference pipelines for image embeddings.</p>
         <ul class="tags">
           <li>AWS</li>
           <li>DynamoDB</li>
@@ -60,7 +61,6 @@
   <section class="panel" id="msl">
     <div class="panel-inner layout-b">
       <div class="panel-text">
-        <p class="chapter">Chapter 02 — 2024</p>
         <h2>Michael Smith Laboratories</h2>
         <p class="role">Bioinformatics Co-op</p>
         <p class="story">Eight months inside a national cancer research initiative, building an unsupervised clustering pipeline to validate tumor subtype classifications from gene expression data. The analysis surfaced a real sample-mislabeling issue. I also owned the lab's data automation and cloud infrastructure, and trained the team on our analytics platform.</p>
@@ -73,9 +73,7 @@
         </ul>
       </div>
       <div class="panel-media">
-        <div class="media-slot" data-hint="Optional: lab / sequencing related image">
-          <span>Image placeholder</span>
-        </div>
+        <img class="media-slot media-photo" src="assets/moh.png" alt="Michael Smith Laboratories project artwork">
       </div>
     </div>
   </section>
@@ -84,15 +82,12 @@
   <section class="panel" id="fom">
     <div class="panel-inner layout-a">
       <div class="panel-media">
-        <div class="media-slot video" data-hint="Drop in a short video demo">
-          <span>Video demo</span>
+        <div class="media-slot video fom-video">
+          <video src="assets/fom-demo.mp4" controls muted playsinline preload="metadata"></video>
         </div>
-        <div class="media-slot small" data-hint="Drop in an email example / testimonial">
-          <span>Email example</span>
-        </div>
+          <img src="assets/fom-photo.jpeg" alt="Faculty of Medicine team photo" class="media-photo fom-photo">
       </div>
       <div class="panel-text">
-        <p class="chapter">Chapter 03 — 2024</p>
         <h2>UBC Faculty of Medicine</h2>
         <p class="role">Software Engineer / Business Analyst Steward</p>
         <p class="story">Designed and built a database-backed auditing tool that cut response times nearly in half. I worked directly with stakeholders to translate real administrative workflows into working software, balancing technical architecture with requirements gathering across developers, design, and research teams.</p>
@@ -106,42 +101,16 @@
     </div>
   </section>
 
-  <!-- ============ 04 — PLATOON COMMANDER ============ -->
-  <section class="panel" id="dnd">
-    <div class="panel-inner layout-b">
-      <div class="panel-text">
-        <p class="chapter">Chapter 04 — 2024</p>
-        <h2>Platoon Commander</h2>
-        <p class="role">Department of National Defence</p>
-        <p class="story">Led a platoon through a summer of cadet training, managing people and shifting priorities in real time. From last-minute schedule disruptions to on-the-ground problem solving under tight timelines, it was a crash course in delegation and staying composed when the plan changes.</p>
-        <ul class="tags">
-          <li>Delegation</li>
-          <li>Prioritization</li>
-          <li>Crisis management</li>
-          <li>Team coordination</li>
-        </ul>
-      </div>
-      <div class="panel-media">
-        <div class="media-slot" data-hint="Optional: training / parade photo">
-          <span>Image placeholder</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- ============ 05 — UBC LAUNCHPAD ============ -->
   <section class="panel" id="launchpad">
     <div class="panel-inner layout-a">
       <div class="panel-media">
-        <div class="media-slot" data-hint="Optional: Launchpad logo / event photo">
-          <span>Image placeholder</span>
-        </div>
+        <img class="media-slot media-photo" src="assets/launchpad.png" alt="UBC Launchpad project artwork">
       </div>
       <div class="panel-text">
-        <p class="chapter">Chapter 05 — Ongoing</p>
         <h2>UBC Launchpad</h2>
         <p class="role">Sponsorships Coordinator</p>
-        <p class="story">Sponsorships coordinator for UBC's largest software engineering club. I manage sponsor relationships end-to-end — sourcing, pitching, and building custom packages — translating between what sponsors want and what the club can realistically deliver.</p>
+        <p class="story">Sponsorships coordinator for UBC's largest software engineering club. I manage sponsor relationships end-to-end (e.g sourcing, pitching, and building custom packages) and translating between what sponsors want and what the club can realistically deliver.</p>
         <ul class="tags">
           <li>Figma</li>
           <li>Relationship management</li>
@@ -155,7 +124,6 @@
   <section class="panel" id="orbit">
     <div class="panel-inner layout-b">
       <div class="panel-text">
-        <p class="chapter">Chapter 06 — Ongoing</p>
         <h2>UBC Orbit <em>(ALEASAT)</em></h2>
         <p class="role">Full-Stack Developer</p>
         <p class="story">Full-stack developer on a student satellite design team, working across backend infrastructure and orbital mechanics. I've built account/API systems, debugged Kubernetes deployment failures, and automated spacecraft lifetime compliance analysis using aerospace simulation tools.</p>
@@ -168,12 +136,8 @@
         </ul>
       </div>
       <div class="panel-media">
-        <div class="media-slot" data-hint="Drop in the team photo">
-          <span>Team photo</span>
-        </div>
-        <div class="media-slot small" data-hint="Drop in the Orbit logo">
-          <span>Logo</span>
-        </div>
+        <img class="media-slot media-photo" src="assets/mops team photo.JPG" alt="Orbit team photo">
+        <img class="media-slot media-photo" src="assets/ubc orbit team photo.JPG" alt="Orbit team photo">
       </div>
     </div>
   </section>
@@ -182,19 +146,17 @@
   <section class="panel" id="athlekin">
     <div class="panel-inner layout-a">
       <div class="panel-media">
-        <div class="media-slot video" data-hint="Drop in a demo video">
-          <span>Demo video</span>
-        </div>
-        <div class="media-slot small" data-hint="Drop in an AI-generated cover image">
-          <span>Cover image</span>
+        <div class="media-slot video">
+          <video src="assets/Athlekin demo.mp4" controls muted playsinline preload="metadata"></video>
         </div>
       </div>
       <div class="panel-text">
-        <p class="chapter">Project — Athlekin</p>
         <h2>Athlekin</h2>
-        <p class="story placeholder-copy">[Placeholder — add a short description: what Athlekin does, who it's for, and your role building it.]</p>
-        <ul class="tags placeholder-copy">
-          <li>[Add tech stack]</li>
+        <p class="story">An Android fitness tracker built solo, from local exercise logging to cloud-synced workout history. The standout feature: autofill and plateau detection that reads past performance to suggest overload strategies, plus Google Calendar integration for scheduling workouts around real availability. A crash course in Firebase quirks and Android testing along the way.</p>
+        <ul class="tags">
+          <li>Android + Kotlin</li>
+          <li>Jetpack Compose</li>
+          <li>Firebase</li>
         </ul>
       </div>
     </div>
@@ -204,10 +166,9 @@
   <section class="panel" id="mern-project">
     <div class="panel-inner layout-b">
       <div class="panel-text">
-        <p class="chapter">Project — [Name TBD]</p>
-        <h2>[MERN Project Name]</h2>
-        <p class="story placeholder-copy">[Placeholder — add a short description of the project, the problem it solves, and your role.]</p>
-        <ul class="tags placeholder-copy">
+        <h2>GCompanion</h2>
+        <p class="story">A full-stack workout tracker built from scratch, then rebuilt — React and a custom Node/Express/MongoDB backend, later migrated toward Next.js and Redux as the app grew. Along the way I added live workout-sharing over WebSockets and learned the hard way about CORS, cookies, and cross-origin auth.</p>
+        <ul class="tags">
           <li>MongoDB</li>
           <li>Express</li>
           <li>React</li>
@@ -215,8 +176,8 @@
         </ul>
       </div>
       <div class="panel-media">
-        <div class="media-slot video" data-hint="Drop in a demo video">
-          <span>Demo video</span>
+        <div class="media-slot video">
+          <video src="assets/MERN-Workout-Companion-Demo - Made with Clipchamp.mp4" controls muted playsinline preload="metadata"></video>
         </div>
       </div>
     </div>
